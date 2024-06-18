@@ -1,7 +1,22 @@
-export default function App() {
+//import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
+import Dashboard from './pages/dashboard'
+
+
+function App  ()  {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='App'>
+    <BrowserRouter>
+    <Routes>
+
+    <Route path="" element={<Dashboard />} />
+
+    </Routes>
+
+    </BrowserRouter>
+    </div>
   )
 }
+
+export default App
